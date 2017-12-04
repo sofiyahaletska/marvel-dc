@@ -1,0 +1,36 @@
+<html>
+	<link rel="stylesheet" href="assets/site.css">
+
+	<link href='http://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
+<header id="headd"class="header-basic-light">
+<body>
+	<div id="header" class="header-limiter" >
+		<div id="asd"></div>
+		<nav>
+			<button id="b1" onclick="window.location.href='home.html'">News</button>
+			<button  id="b2" onclick="window.location.href='games.html'">Iron snake</button>
+			<button id="b5" onclick="window.location.href='game2.html'">Guess the hero</button>
+			<button  id="b3" onclick="window.location.href='release.html'">Release</bu	tton>
+			<button id="b4" onclick="window.location.href='comics.html'">Comics</button><a></a><a></a><a></a>
+				<button id="b6" onclick="setTimeout(function(){window.location.href='../dc/home.html';},2000);"></button>
+		</nav>
+	</div>
+</header>
+	<section id="news"><center><iframe id="frame" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fmarvel&tabs=timeline&width=500&height=1000&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" width="500" height="765px" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>	</center>	</section>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script>
+$("#asd").click(function() {
+    $("#asd,#news,#headd,#frame,#b1,#b2,#b3,#b4").toggleClass("hatch");
+});
+$("#b6").click(function(){
+	$('#asd,#news,#headd,#frame,#b1,#b2,#b3,#b4').toggleClass('expandOpen');
+});
+(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+</header>
+</html>

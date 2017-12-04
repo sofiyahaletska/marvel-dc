@@ -1,0 +1,306 @@
+@import url("http://www.justinaguilar.com/animations/css/animations.css");
+/*selectiouny*/
+#guard{
+	font-family:"Comic Sans MS", cursive, sans-serif	;
+  color:black;
+	font-size: 35px;
+	cursor: pointer;
+	position: ;
+		left: 55px;
+}
+#b6{background-size:contain;
+	position: fixed;
+	top:16px;
+	right: 10px;
+width: 80px;
+	height: 50px;
+	background-image: url(http://cliparts.co/cliparts/kiK/BKg/kiKBKgLyT.png);
+}
+#hero{
+	border-radius: 100px;
+	background-size: cover;
+	background-image:url(http://cliparts.co/cliparts/8cA/b9p/8cAb9ppxi.jpg);
+height: 200px;
+width: 200px;
+}
+window.open{
+	background-color: blue;
+}
+.tcw:after { content: ""; display: block; margin-top: 25%; }
+#calendar{
+		position:relative;
+		  top:860px;
+			left:60px;
+}
+
+#rell{
+	pointer-events: none;
+	padding: 300px 500px;
+	background-size:auto;
+	position:relative;
+  top:450px;
+	left: 310px;
+	 background-image: url();
+}
+hr{
+	border-style: inset;
+	border-width: 1px;
+}
+section{
+	background-color: white;
+	position:relative;
+	  height: 100vh;
+background-image: url(https://www.toptal.com/designers/subtlepatterns/patterns/swirl_pattern.png);
+	  outline-style: solid;
+}
+section#news{
+	}
+section#games{
+background-color: white;
+}
+section#release{
+	height:2700px;
+}
+section#info{
+	height:1100px;
+}
+/*knopki*/
+button:hover
+{
+    box-shadow: 0px 0px 20px #000000;
+    z-index: 1;
+    -webkit-transition: all 100ms ease-in;
+    -webkit-transform: scale(1);
+    -ms-transition: all 100ms ease-in;
+    -ms-transform: scale(1);
+    -moz-transition: all 100ms ease-in;
+    -moz-transform: scale(1);
+    transition: all 100ms ease-in;
+    transform: scale(1);
+}
+
+button{
+	display:inline-block;
+	background-color: #f2f2f2;
+	border-radius: 100px;
+	color:black;
+	padding: 5px 20px;
+	font-family: Monospace;
+	font-size: 18px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: bold;
+	line-height: 28.6px;
+}
+button:focus {
+	outline:0;
+}
+
+/*header*/
+/*logo*/
+#asd{
+background-image: url(https://avatanplus.com/files/resources/mid/572dd275e157a1548afe1ca3.png);
+background-size: cover;
+width: 200px;
+	height: 100px;
+		position: absolute;
+	     top: -10px;
+	     left: -8px;
+	     font-size: 18px;
+}
+
+.header-basic-light{
+	background-position:left;
+	padding: 20px 40px;
+	box-sizing:border-box;
+	box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.15);
+	height: 80px;
+	background-image: url(http://d2ydh70d4b5xgv.cloudfront.net/images/2/5/marvel-comics-retro-pattern-design-featuring-m-o-d-o-k-poster-e0a9a659e1435f206abca495197486eb.jpg);
+}
+
+.header-basic-light .header-limiter {
+	max-width: 1200px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+/* Logo */
+
+.header-basic-light .header-limiter h1{
+	float: left;
+	font: normal 28px Cookie, Arial, Helvetica, sans-serif;
+	line-height: 40px;
+	margin: 0;
+}
+
+.header-basic-light .header-limiter h1 span {
+	color: #5383d3;
+}
+
+/* The header links */
+
+.header-basic-light .header-limiter a {
+	color: #5c616a;
+	text-decoration: none;
+}
+
+.header-basic-light .header-limiter nav{
+	font:15px Arial, Helvetica, sans-serif;
+	line-height: 40px;
+	float: right;
+}
+
+.header-basic-light .header-limiter nav a{
+	display: inline-block;
+	padding: 0 5px;
+	opacity: 0.9;
+	text-decoration:none;
+	color: #5c616a;
+	line-height:1;
+}
+
+.header-basic-light .header-limiter nav a.selected {
+	background-color: #ff4d4d;
+	color: #ffffff;
+	border-radius: 3px;
+	padding:6px 10px;
+}
+
+/* Making the header responsive. */
+
+@media all and (max-width: 600px) {
+
+	.header-basic-light {
+		padding: 20px 0;
+		height: 85px;
+	}
+
+	.header-basic-light .header-limiter h1 {
+		float: none;
+		margin: -8px 0 10px;
+		text-align: center;
+		font-size: 24px;
+		line-height: 1;
+	}
+
+	.header-basic-light .header-limiter nav {
+		line-height: 1;
+		float:none;
+	}
+
+	.header-basic-light .header-limiter nav a {
+		font-size: 13px;
+	}
+
+}
+a#top{
+position:static;
+	top: auto;
+	right:500px;
+	color:black;
+	font-family: Monospace;
+	font-size: 100px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: bold;
+	line-height: 28.6px;
+
+}
+
+body {
+	margin:0;
+	padding:0;
+}
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+.container {
+	position: relative;
+	width: 800px;
+	height: 400px;
+	margin: 70px auto 0;
+	display: flex;
+	flex-direction: column-reverse;
+	z-index: 1;
+}
+.shelf {
+	width: 760px;
+	height: 50px;
+	border-bottom: 3px solid grey;
+	margin-left: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+.shelf:first-child {
+	margin-bottom: 5px;
+}
+#aa,#diva,#divb,#divc{
+	font-family:"Comic Sans MS", cursive, sans-serif	;
+  color:black;
+	font-size: 25px;
+}
+#div1{
+	background-color: white;
+	height: 100vh;
+	width: 600px;	}
+.letter {
+	font-family:"Comic Sans MS", cursive, sans-serif	;
+  color:black;
+	font-size: 35px;
+	cursor: pointer;
+}
+.lifes-remain, .word-length {
+	display: inline-block;
+	text-align: center;
+	font-family:"Comic Sans MS", cursive, sans-serif	;
+	font-size: 30px;
+	color:black;
+	vertical-align: top;
+}
+.lifes-remain {
+	position: absolute;
+	top: 5px;
+	left: 5px;
+}
+.word-length {
+	position: absolute;
+	right: 5px;
+	top: 5px;
+}
+.hidden-word {
+	text-align: center;
+	font-family:"Comic Sans MS", cursive, sans-serif	;
+	font-size: 40px;
+		color:black;
+	margin-bottom: 50px;
+		color:black;
+}
+.game-over, .game-won {
+	display: none;
+	position: absolute;
+	width: 800px;
+	height: 400px;
+	top: 170px;
+	left: calc(50% - 400px);	z-index: 9999;
+	text-align: center;
+}
+.game-over div, .game-won div {
+	font-family:"Comic Sans MS", cursive, sans-serif	;
+	font-size: 30px;
+	color: #540718;
+	margin-top: 100px;
+}
+.game-over.open, .game-won.open {
+	display: block;
+}
+.game-over a, .game-won a {
+	font-family:"Comic Sans MS", cursive, sans-serif	;
+	font-size: 30px;
+	color: #110f31;
+	display: inline-block;
+	margin-top: 15px;
+	text-decoration: none;
+}

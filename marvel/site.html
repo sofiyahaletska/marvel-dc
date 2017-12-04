@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<link rel="stylesheet" href="assets/site.css">
+	<link href='http://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
+<header class="header-basic-light">
+<body>
+
+	<div class="header-limiter">
+		<div id="asd"></div>
+		<nav>
+			<button id="b1" onclick="window.location.href='file:///C:/Users/LQAS-Student/Desktop/marvel-20170205T121932Z/marvel/home.html'">News</button>
+			<button  id="b2" onclick="window.location.href='file:///C:/Users/LQAS-Student/Desktop/marvel-20170205T121932Z/marvel/site2.html'">Games</button>
+			<button  id="b3" onclick="window.location.href='file:///C:/Users/LQAS-Student/Desktop/marvel-20170205T121932Z/marvel/site2.html'">Release</button>
+			<button id="b4" onclick="window.location.href='file:///C:/Users/LQAS-Student/Desktop/marvel-20170205T121932Z/marvel/site2.html'">Info</button>
+		</nav>
+	</div>
+</header>
+	<section id="news"><center><iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fmarvel&tabs=timeline&width=500&height=1000&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" width="500" height="2000px" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe></section>
+	</center><section id="games"><a href="http://www.clker.com/cliparts/b/F/p/t/x/f/asdsa-dasd-as-md.png"  onclick="window.open('http://www.clker.com/cliparts/b/F/p/t/x/f/asdsa-dasd-as-md.png', 'newwindow', 'width=300, height=250'); return false;"> Print</a></section>
+		<section id="release"><center><img id="img"><center><a target="_blank" id="calendar" href="https://calendar.google.com/calendar/event?action=TEMPLATE&amp;tmeid=cmltam5vbzltOWZxam9zcnFlamo1Y2tvcjggbWF4ZnlrQG0&amp;tmsrc=maxfyk%40gmail.com"></center><img border="0" src="https://www.google.com/calendar/images/ext/gc_button1_uk.gif"></a></center><iframe id="rell" src="http://free.timeanddate.com/countdown/i5km9s42/n368/cf12/cm0/cu4/ct0/cs0/ca0/cr0/ss0/cacfff/cpcfff/pc241e20/tcfff/fs100/szw576/szh243/tacfff/tptHEY%20GUARDIANS%20ARE%20TODAY/tpcfff/mat%20/macfff/mpcfff/iso2017-05-05T00:00:00" allowTransparency="true" frameborder="0" width="200" height="52"></iframe></img>
+
+	</section>
+	<section id="info"></section>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script type="text/javascript" src="http://arrow.scrolltotop.com/arrow3.js"></script>
+<script>
+$("#b1").click(function() {
+    $('html,body').animate({
+        scrollTop: $(".header-basic-light").offset().top},
+        'slow');
+});
+$("#b2").click(function() {
+    $('html,body').animate({
+        scrollTop: $("#games").offset().top},
+        'slow');
+});
+$("#b3").click(function() {
+    $('html,body').animate({
+        scrollTop: $("#release").offset().top},
+        'slow');
+});
+$("#b4").click(function() {
+    $('html,body').animate({
+        scrollTop: $("#info").offset().top},
+        'slow');
+});
+</script>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+</header>
+</html>

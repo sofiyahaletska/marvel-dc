@@ -1,0 +1,92 @@
+<html>
+
+  <head>
+    <title>
+    </title>
+    <link rel="stylesheet" href="assets/scripppt.js">
+
+    <link rel="stylesheet" href="op.css">
+    <!-- jQuery library (served from Google) -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <!-- bxSlider Javascript file -->
+    <script src="js/bxslider/jquery.bxslider.min.js"></script>
+    <!-- bxSlider CSS file -->
+    <link href="js/bxslider/jquery.bxslider.css" rel="stylesheet" />
+    <link rel="stylesheet" href="op(pager).css">
+
+    <link rel="stylesheet" href="ism/css/my-slider.css"/>
+    <script src="ism/js/ism-2.2.min.js"></script>
+
+  </head>
+  <link rel="stylesheet" href="assets/site.css">
+  <link href='http://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
+  <header id="headd" class="header-basic-light">
+  <body>
+
+  <div class="header-limiter">
+    <div id="asd"></div>
+    <nav>
+      <button id="b1" onclick="window.location.href='home.html'">News</button>
+			<button  id="b2" onclick="window.location.href='games.html'">Iron snake</button>
+			<button id="b5" onclick="window.location.href='game2.html'">Guess the hero</button>
+			<button  id="b3" onclick="window.location.href='release.html'">Release</button>
+			<button id="b4" onclick="window.location.href='comics.html'">Comics</button>
+      <a></a><a></a><a></a>
+				<button id="b6" onclick="setTimeout(function(){window.location.href='../marvel/home.html';},2000);"></button>
+    </nav>
+  </div>
+  </header>
+  <section id="info"><center>
+  <body>
+    <div class='container'>
+
+    <div class="ism-slider" data-transition_type="zoom" data-radios="false" id="my-slider">
+      <ol>
+        <li>
+          <iframe width="1036px" height="780" src="https://www.youtube.com/embed/_rgzmQ_vpSo" frameborder="0" allowfullscreen></iframe>
+        </li>
+        <li>
+        <iframe  width="1036px" height="780" src="https://www.youtube.com/embed/2tolAZkGODk" frameborder="0" allowfullscreen></iframe>
+        </li>
+        <li>
+        <iframe  width="1036px" height="780"  src="https://www.youtube.com/embed/31yw851TOhA" frameborder="0" allowfullscreen></iframe>
+        </li>
+        <li>
+        <iframe  width="1036px" height="780" src="https://www.youtube.com/embed/h4m7qvtKtZA" frameborder="0" allowfullscreen></iframe>
+        </li>
+      </ol>
+    </div>
+
+    </div>
+    <script>
+    $("#b6").click(function(){
+    	$('#asd,#a1,#headd,#info,#b1,#b2,#b3,#b4,#b5').toggleClass('pulse');
+    });
+      $(document).ready(function() {
+        var sliders = new Array();
+        $('.bxslider').each(function(i, slider) {
+     sliders[i] = $(slider).bxSlider();
+  });
+        var lastpage = "a1", a=lastpage;
+        $('.link.button').click(function(e){
+          var a = $(e.currentTarget).data("view");
+          console.log(a)
+    e.preventDefault();
+
+          document.getElementById(lastpage).style.display="none";
+          document.getElementById(a).style.display="block";
+          lastpage = a;
+
+
+       $.each(sliders, function(i, slider) {
+           slider.reloadSlider();
+       });
+
+        });
+      });
+
+
+    </script>
+  </body>
+
+</html>

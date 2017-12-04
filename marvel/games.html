@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>		<link href="https://i.annihil.us/u/prod/marvel/s/css/ba9a992f3e3720e00c69c58680cb46db.css">
+<link rel="stylesheet" href="assets/site.css">
+<link href='http://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
+<header id="headd"class="header-basic-light">
+<div class="header-limiter">
+  <div id="asd"></div>
+  <nav>
+    <button id="b1" onclick="window.location.href='home.html'">News</button>
+    <button  id="b2" onclick="window.location.href='games.html'">Iron snake</button>
+    <button id="b5" onclick="window.location.href='game2.html'">Guess the hero</button>
+    <button  id="b3" onclick="window.location.href='release.html'">Release</button>
+    <button id="b4" onclick="window.location.href='comics.html'">Comics</button>
+    <a></a><a></a><a></a>
+      <button id="b6" onclick="setTimeout(function(){window.location.href='../dc/home.html';},2000);"></button>
+  </nav>
+</div>
+</header>
+<section id="games"><body id="body">
+<head>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <link href="snakes.min.css" media="screen, print" rel="stylesheet" type="text/css" />
+</head>
+
+
+
+  <div id="snakes"><div id="score">
+    <span class="current"><span class='label'>Score: </span><span class="value">000000</span></span>
+    <span class="high"><span class='label'>High: </span><span class="value">000000</span></span>
+  </div>
+<div id='sound' class='on' title='toggle music and fx' style='display:none;'></div>
+
+
+
+    <canvas id="canvas">
+
+    </canvas>
+
+    <div id="overlay">
+
+      <img id="logo" src="https://avatanplus.com/files/resources/mid/572dd275e157a1548afe1ca3.png">
+
+      <div id="loading" class='menu' style='display:none;'>
+        <h1>Loading...</h1>
+      </div>
+
+      <div id="highscores" class='menu' style='display:none;'>
+        <h1>High Scores</h1>
+        <ul></ul>
+      </div>
+
+      <div id="credits" class='menu' style='display:none;'>
+        <ul>
+		<li></li>
+    <br></br><br></br>
+          <li class='author'>Created by <a target="_credits">Max,sofia,darko,roma</a></li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+  <script src="snakes.min.js"></script>
+
+  <script>
+  Game.ready(function() {
+    game = Snakes();
+  });
+  </script>
+</section>
+</body>
+</html>

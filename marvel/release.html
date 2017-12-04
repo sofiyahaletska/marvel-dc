@@ -1,0 +1,93 @@
+<link rel="stylesheet" href="assets/site.css">
+
+<link href='http://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
+<header id="headd"class="header-basic-light">
+<body>
+<div id="header" class="header-limiter" >
+<body>
+
+	<div class="header-limiter">
+		<div id="asd"></div>
+		<nav>
+			<button id="b1" onclick="window.location.href='home.html'">News</button>
+			<button  id="b2" onclick="window.location.href='games.html'">Iron snake</button>
+			<button id="b5" onclick="window.location.href='game2.html'">Guess the hero</button>
+			<button  id="b3" onclick="window.location.href='release.html'">Release</button>
+			<button id="b4" onclick="window.location.href='comics.html'">Comics</button>
+			<a></a><a></a><a></a>
+				<button id="b6" onclick="setTimeout(function(){window.location.href='../dc/home.html';},2000);"></button>
+		</nav>
+	</div>
+</header>
+<section id="release"><center><div id="div1">
+
+
+	<a id="guard">May 5th, 2017-Guardians of the Galaxy 2</a>
+		<iframe width="600" id="aa" height="378	" src="https://www.youtube.com/embed/dW1BIid8Osg" frameborder="0" allowfullscreen></iframe><a></a>
+<p id="aa">James Gunn will be back to direct the sequel to the most unlikely superhero hit of recent years. We're going to meet some very i
+mportant new characters in Guardians of the Galaxy Vol. 2, including Star Lord's father, Ego, played by Kurt Russell.</p>
+<button id="divc"> </button><br></br>
+<a target="_blank" href="https://calendar.google.com/calendar/event?action=TEMPLATE&amp;tmeid=dmViNTN2cWFkcXBwN3JqMjRhdnRxYmJldGsgbWF4ZnlrQG0&amp;tmsrc=maxfyk%40gmail.com"><img border="0" src="https://www.google.com/calendar/images/ext/gc_button1_uk.gif"></a>
+<hr></hr>
+
+
+
+<a id="guard">July 7th, 2017-Spider-Man: Homecoming</a>
+	<iframe width="600" id="aaa"height="378" src="https://www.youtube.com/embed/xrzXIaTt99U" frameborder="0" allowfullscreen></iframe><a></a>
+	<p id="aa">Spidey entering the Marvel Cinematic Universe is a seismic event. We first met Spidey in Captain America: Civil War, but this will
+		be his first solo outing under the Marvel banner. We don't know much about the story yet, other than that it will focus on a high school aged
+		Spider-Man, feature villains we haven't seen on screen before (including Michael Keaton as The Vulture and at least one version of the
+		 shocker), and they're aiming for a "John Hughes" vibe.</p>
+	<button id="divb"> </button>
+<br></br><a target="_blank" href="https://calendar.google.com/calendar/event?action=TEMPLATE&amp;tmeid=OWZjbzhsMHNlb2hxNWcyYmRkamY1cXJhZ3MgbWF4ZnlrQG0&amp;tmsrc=maxfyk%40gmail.com"><img border="0" src="https://www.google.com/calendar/images/ext/gc_button1_uk.gif"></a>
+
+
+<hr></hr>
+	<a id="guard">November 3rd, 2017: Thor: Ragnarok</a>
+	<iframe width="600" height="378" src="https://www.youtube.com/embed/fVnBBjjjAnY" frameborder="0" allowfullscreen></iframe><a></a>
+	<p id="aa">For the record, when folks talk about "Ragnarok" in Norse mythology, it usually isn't a good thing. This should be, by far, the biggest of the Thor films. Taika Waititi directs from a script by Stephany Folsom, Christopher Yost, and Craig Kyle. Expect the usual core cast
+		 to return, but with a few twists. Mark Ruffalo will join the party as the Hulk, Cate Blanchett is playing Hela.</p>
+			<button id="diva" > </button><br></br>
+			<a target="_blank" href="https://calendar.google.com/calendar/event?action=TEMPLATE&amp;tmeid=ZmVpYTM5OTU5MG5iYW50Y25jbWtmNGdmZHMgbWF4ZnlrQG0&amp;tmsrc=maxfyk%40gmail.com"><img border="0" src="https://www.google.com/calendar/images/ext/gc_button1_uk.gif"></a>
+	<div>
+</section>
+<script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="http://arrow.scrolltotop.com/arrow3.js"></script>
+	<script src="http://momentjs.com/downloads/moment.js"></script> <script src="toastr.min.js"></script>
+	 <script>$("#b6").click(function(){
+	 	$('#asd,#release,#headd,#div1,#b1,#b2,#b3,#b4').toggleClass('pulse');
+	 });
+	function getTimeRemaining(endtime){
+	  var t = Date.parse(endtime) - Date.parse(new Date());
+	  var seconds = Math.floor( (t/1000) % 60 );
+	  var minutes = Math.floor( (t/1000/60) % 60 );
+	  var hours = Math.floor( (t/(1000*60*60)) % 24 );
+	  var days = Math.floor( t/(1000*60*60*24) );
+	  return {
+	    'total': t,
+	    'days': days,
+	    'hours': hours,
+	    'minutes': minutes,
+	    'seconds': seconds
+	  };
+	}
+	 function initializeClock(id, endtime){
+	  var clock = document.getElementById(id);
+	  var timeinterval = setInterval(function(){
+	    var t = getTimeRemaining(endtime);
+	    clock.innerHTML =t.days + 'd:' +  t.hours + 'h:' + t.minutes +'m:'+ t.seconds+ 's';
+	    if(t.total<=0){
+	      clearInterval(timeinterval);
+	    }
+	  },1000);
+	}
+
+	initializeClock('divc', "05,05,2017")
+
+
+	 initializeClock('divb', "07,07,2017")
+
+	initializeClock('diva', "11,03,2017")
+	</script>
+</header>
+</html>

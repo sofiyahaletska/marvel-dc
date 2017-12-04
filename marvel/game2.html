@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>		<link rel="stylesheet">
+
+	<link rel="stylesheet" href="assets/site.css">
+	<link href='http://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
+<header class="header-basic-light">
+<body>
+
+	<div class="header-limiter">
+		<div id="asd"></div>
+		<nav>
+			<button id="b1" onclick="window.location.href='home.html'">News</button>
+			<button  id="b2" onclick="window.location.href='games.html'">Iron snake</button>
+			<button id="b5" onclick="window.location.href='game2.html'">Guess the hero</button>
+			<button  id="b3" onclick="window.location.href='release.html'">Release</button>
+			<button id="b4" onclick="window.location.href='comics.html'">Comics</button>
+			<a></a><a></a><a></a>
+				<button id="b6" onclick="setTimeout(function(){window.location.href='../dc/home.html';},2000);"></button>
+		</nav>
+	</div>
+</header>
+<section id="games"><center>	<br></br><br></br><div id="hero"></div>	<br></br><br></br>
+
+	<span class="hidden-word"></span>
+	<br></br><br></br>	<br></br><br></br>
+	<div class="shelf">
+		<span class="letter">A</span>
+		<span class="letter">B</span>
+		<span class="letter">C</span>
+		<span class="letter">D</span>
+		<span class="letter">E</span>
+		<span class="letter">F</span>
+		<span class="letter">G</span>
+		<span class="letter">H</span>
+		<span class="letter">I</span>
+		<span class="letter">J</span>
+		<span class="letter">K</span>
+		<span class="letter">L</span>
+		<span class="letter">M</span>
+		<span class="letter">N</span>
+		<span class="letter">O</span>
+		<span class="letter">P</span>
+	</div>
+		<div class="shelf">
+			<span class="letter">R</span>
+			<span class="letter">S</span>
+			<span class="letter">T</span>
+			<span class="letter">U</span>
+			<span class="letter">V</span>
+			<span class="letter">W</span>
+			<span class="letter">X</span>
+			<span class="letter">Y</span>
+			<span class="letter">Z</span>
+		</div>
+		<br></br><br></br>	<div class="game-over">
+			<div>You lose.The word was <span class="word"></span></div>
+			<a href="game2.html">Play again?</a>
+		</div>
+		<div class="game-won">
+			<div>You win!</div><br></br><br></br><br></br>
+			<a href="game2.html">Play again?</a>
+		</div><br></br><br></br>
+		<div class="lifes-remain">
+			Lifes remaing<br>
+			<span class="lifes"></span>
+		</div>
+		<div class="word-length">
+			Leters in word<br>
+			<span class="letters-quantity"></span>
+		</div>
+	</div>
+
+</center></section>	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script>
+$("#b6").click(function(){
+	$('#asd,#games,#headd,.letter,#b1,#b2,#b3,#b4,#b5,#b6').toggleClass('pulse');
+});
+$("span").click(function () {
+    $(this).removeClass("letter");
+    $(this).addClass("letrer2");
+});
+var arr = ['IRON__MAN', 'SPIDER__MAN', 'CAPITAN__AMERICA',"WOLVERINE","BLACK__WIDOW","HULK"];
+var word = arr[~~(Math.random() * arr.length)];
+var wordArr = word.split('');
+var equaleWord = wordArr.join(' ')
+var secretWord = '_';
+var lifes = 5;
+for (i = 0; i < word.length-1; i++) {
+	secretWord+=" _"
+}
+if(word==arr[0]){
+$('#hero').css('background-image', 'url(https://i.annihil.us/u/prod/marvel/i/mg/6/a0/55b6a25e654e6/standard_xlarge.jpg')
+}
+if(word==arr[1]){
+$('#hero').css('background-image', 'url(https://i.annihil.us/u/prod/marvel/i/mg/9/30/538cd33e15ab7/standard_xlarge.jpg')
+}
+if(word==arr[2]){
+$('#hero').css('background-image', 'url(https://i.annihil.us/u/prod/marvel/i/mg/3/50/537ba56d31087/standard_xlarge.jpg')
+}
+if(word==arr[3]){
+$('#hero').css('background-image', 'url(https://i.annihil.us/u/prod/marvel/i/mg/2/60/537bcaef0f6cf/standard_xlarge.jpg')
+}
+if(word==arr[4]){
+$('#hero').css('background-image', 'url(https://i.annihil.us/u/prod/marvel/i/mg/f/30/50fecad1f395b/standard_xlarge.jpg')
+}
+if(word==arr[5]){
+$('#hero').css('background-image', 'url(https://i.annihil.us/u/prod/marvel/i/mg/5/a0/538615ca33ab0/standard_xlarge.jpg')
+}
+var lettersQuantity = document.querySelector('.letters-quantity');
+lettersQuantity.innerHTML = word.length;
+var lifesNow = document.querySelector('.lifes');
+lifesNow.innerHTML = lifes;
+var hiddenWord = document.querySelector('.hidden-word');
+hiddenWord.innerHTML = secretWord;
+var gameOver = document.querySelector('.game-over');
+var gameOverWord = document.querySelector('.word');
+gameOverWord.innerHTML = word;
+var gameWon = document.querySelector('.game-won')
+var letter = document.querySelectorAll('.letter');
+for (var i = 0; i < letter.length; i++) {
+	letter[i].onclick = function(event) {
+		for (i = 0; i < word.length; i++) {
+		word[i];
+		if (word[i] == this.innerHTML) {
+			var newArr = secretWord.split(' ');
+			newArr[i] = this.innerHTML;
+			secretWord = newArr.join(' ');
+		}
+		hiddenWord.innerHTML = secretWord;
+		}
+		if (this.innerHTML !== word[0] && this.innerHTML !== word[1] && this.innerHTML !== word[2] && this.innerHTML !== word[3] && this.innerHTML !== word[4] && this.innerHTML !== word[5] && this.innerHTML !== word[6] && this.innerHTML !== word[7] && this.innerHTML !== word[8] && this.innerHTML !== word[9]) lifesNow.innerHTML--;
+		if (lifesNow.innerHTML == '0') gameOver.classList.add('open');
+		if (secretWord == equaleWord) gameWon.classList.add('open');
+		this.style.width = this.offsetWidth + 'px';
+	$(this).css({"opacity":"0.3","pointer-events": "none","font-family":"Comic Sans MS,cursive, sans-serif","color":"#ff0000","font-size": "35px","cursor": "pointer"});
+	}
+}
+
+
+
+</script>
+
+</header>
+</html>

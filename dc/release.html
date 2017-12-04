@@ -1,0 +1,89 @@
+<link rel="stylesheet" href="assets/site.css">
+
+<link href='http://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
+<header id="headd"class="header-basic-light">
+<body>
+<div id="header" class="header-limiter" >
+<body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<div class="header-limiter">
+		<div id="asd"></div>
+		<nav>
+			<button id="b1" onclick="window.location.href='home.html'">News</button>
+			<button  id="b2" onclick="window.location.href='games.html'">Bat-snake</button>
+			<button id="b5" onclick="window.location.href='game2.html'">Guess the hero</button>
+			<button  id="b3" onclick="window.location.href='release.html'">Release</button>
+			<button id="b4" onclick="window.location.href='comics.html'">Comics</button><a></a><a></a><a></a>
+      <button id="b6" onclick="setTimeout(function(){window.location.href='../marvel/home.html';},1000);"></button>
+		</nav>
+	</div>
+</header>
+<section id="release"><center><div id="div1">
+
+
+	<a id="guard">June 2nd, 2017 - Wonder Woman</a>
+		<iframe width="600" height="378" src="https://www.youtube.com/embed/1Q8fG0TtVAY" frameborder="0" allowfullscreen></iframe><a></a>
+<p id="aa">The fact that we have yet to see a Wonder Woman solo movie is almost beyond belief. We don't have time to get into the rampant short-sightedness that is keeping women fro
+	m taking marquee roles in superhero movies at the moment (and that's bound to change one of these days, especially given how their fortunes have changed on TV), but just know that Gal Gadot does some serious Amazonian ass-kicking in Batman. </p>
+<button id="divc"> </button><br></br>
+<a target="_blank" href="https://calendar.google.com/calendar/event?action=TEMPLATE&amp;tmeid=aGY1MmN0ZW5kaDNuNWV1MHU2cGg2ODhvZmcgbWF4ZnlrQG0&amp;tmsrc=maxfyk%40gmail.com"><img border="0" src="https://www.google.com/calendar/images/ext/gc_button1_uk.gif"></a><hr></hr>
+
+
+
+<a id="guard">November 17th, 2017 - Justice League</a>
+	<iframe width="600" height="378" src="https://www.youtube.com/embed/gglkYMGRYlE" frameborder="0" allowfullscreen></iframe>
+	<p id="aa">Zack Snyder will direct Justice League, and BvS co-writer Chris Terrio is back. The villain of this one is Steppenwolf, one of Darkseid's relatives, and it focuses on Batman building a team to confront him.This one will also introduce Aquaman's Queen Mera (played by Amber Heard), which would make sense considering that the Aquaman movie will follow the next fall.
+	</p>
+	<button id="divb"> </button>
+<br></br><a target="_blank" href="https://calendar.google.com/calendar/event?action=TEMPLATE&amp;tmeid=Njk0cHB2dGFuYnVpZDZlbm40OHQzdmJkNDggbWF4ZnlrQG0&amp;tmsrc=maxfyk%40gmail.com"><img border="0" src="https://www.google.com/calendar/images/ext/gc_button1_uk.gif"></a>
+
+
+<hr></hr>
+	<a id="guard">July 27th, 2018 - Unknown</a>
+	<img width="600" height="378" src="https://i.ytimg.com/vi/R_SYtUp_ri8/hqdefault.jpg"></img><a></a>
+	<p id="aa">This was formerly the date occupied by the Aquaman movie, but that was bumped to October. At one point we thought this could end up being the debut of Ben Affleck's Batman solo movie but that film has just hit its own production probl
+		ems, with Mr. Affleck bowing out as director. Maybe The Flash, which is likely about to hit some production delays will just get a few months of breathing room?</p>
+			<button id="diva" > </button><br></br>
+<a target="_blank" href="https://calendar.google.com/calendar/event?action=TEMPLATE&amp;tmeid=NXFvbTFvaXBlNHAydjk4cWI2NmFsNnRnNXMgbWF4ZnlrQG0&amp;tmsrc=maxfyk%40gmail.com"><img border="0" src="https://www.google.com/calendar/images/ext/gc_button1_uk.gif"></a>
+	<div>
+</section>
+<script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="http://arrow.scrolltotop.com/arrow3.js"></script>
+	<script src="http://momentjs.com/downloads/moment.js"></script> <script src="toastr.min.js"></script>
+	 <script>$("#b6").click(function(){
+	 	$('#asd,#release,#headd,#div1,#b1,#b2,#b3,#b4').toggleClass('pulse');
+	 });
+	function getTimeRemaining(endtime){
+	  var t = Date.parse(endtime) - Date.parse(new Date());
+	  var seconds = Math.floor( (t/1000) % 60 );
+	  var minutes = Math.floor( (t/1000/60) % 60 );
+	  var hours = Math.floor( (t/(1000*60*60)) % 24 );
+	  var days = Math.floor( t/(1000*60*60*24) );
+	  return {
+	    'total': t,
+	    'days': days,
+	    'hours': hours,
+	    'minutes': minutes,
+	    'seconds': seconds
+	  };
+	}
+	 function initializeClock(id, endtime){
+	  var clock = document.getElementById(id);
+	  var timeinterval = setInterval(function(){
+	    var t = getTimeRemaining(endtime);
+	    clock.innerHTML =t.days + 'd:' +  t.hours + 'h:' + t.minutes +'m:'+ t.seconds+ 's';
+	    if(t.total<=0){
+	      clearInterval(timeinterval);
+	    }
+	  },1000);
+	}
+
+	initializeClock('divc', "06,02,2017")
+
+
+	 initializeClock('divb', "11,17,2017")
+
+	initializeClock('diva', "07,27,2018")
+	</script>
+</header>
+</html>
